@@ -1,7 +1,7 @@
 body {
   min-height: 98vh;
-  background: #908c8c;
-  background: linear-gradient(130deg, #908c8c 0%, #daedf1 100%);
+  background: #ADADAD;
+  background: linear-gradient(130deg, #ADADAD 0%, #daedf1 100%);
 }
 
 .bg-circle {
@@ -26,7 +26,7 @@ body {
 }
 
 .main-title {
-  color: #c5cbce;
+  color: #e4e4e4;
   position: fixed;
   top: 100px;
   z-index: -20;
