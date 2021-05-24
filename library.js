@@ -14,7 +14,7 @@ function GetBook(){
   var read = document.getElementById("BookRead").value;
   const first = new Book(title, author, pages, read);
   console.log(first.title)
-  libarray << first;
+  libarray.push(first);
   console.log(libarray)
 }
 
