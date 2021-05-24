@@ -15,8 +15,9 @@
   </head>
   <body>
     <h1 class="h1 main-title ms-4 my-3">Library Project</h1>
+    <span class="bg-circle"></span>
     <div class="pagemain container">
-      <div class="d-flex row mx-auto my-5 text-center justify-content-center">
+      <div class="d-flex row mx-auto my-5 text-center justify-content-center form-container">
         <form>
           <div class="form-group my-3">
             <label for="BookTitle">Title:</label>
@@ -30,8 +31,8 @@
             <label for="BookPages">Page count:</label>
             <input type="number" class="form-control" id="BookPages" placeholder="0">
           </div>
-          <div class="form-check my-3">
-            <input type="checkbox" class="form-check-input" id="BookRead">
+          <div class="form-check my-3 d-flex justify-content-center">
+            <input type="checkbox" class="form-check-input me-2" id="BookRead">
             <label class="form-check-label" for="BookRead">Finished Reading</label>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
