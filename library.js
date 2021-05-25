@@ -10,7 +10,7 @@ function printBook(data) {
   var arr = Object.keys(data);
   var bookcontainer = document.querySelector("#BookContainer");
   var book = document.createElement("div");
-  book.classList.add("col", "row", "bookcontainer", "text-center");
+  book.classList.add("col-12","my-5", "row", "bookcontainer", "text-center");
   for(var i = 0; i < 4; i++){
     var temp = document.createElement("div");
     temp.classList.add("titlegroup", "row");
@@ -29,9 +29,9 @@ function printBook(data) {
     temp.appendChild(temp2);
     temp.appendChild(temp2c);
     book.appendChild(temp);
-    bookcontainer.appendChild(book);
+   
   }
-
+  bookcontainer.appendChild(book);
 }
 
 function GetBook(){
@@ -40,10 +40,10 @@ function GetBook(){
   var author = document.getElementById("BookAuthor").value;
   var pages = document.getElementById("BookPages").value;
   var read = document.getElementById("BookRead").checked;
-  const first = new Book(title, author, pages, read);
+  var first = new Book(title, author, pages, read);
   console.log(first.title)
   libarray.push(first);
-  console.log(libarray)
+  printBook(first);
 }
 
 const btn = document.querySelector('#btn');
