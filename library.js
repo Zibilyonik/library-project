@@ -20,8 +20,6 @@ function printBook(data) {
     var temp3 = document.createElement("h3");
     temp3.classList.add("label", "h3");
     var temp3c = temp3.cloneNode(true);
-    console.log(arr[i])
-    console.log(data[arr[i]])
     temp3.innerHTML = arr[i] + " of the book:"
     temp3c.innerHTML = data[arr[i]]
     temp2.appendChild(temp3);
@@ -31,6 +29,14 @@ function printBook(data) {
     book.appendChild(temp);
    
   }
+  var btnread = document.createElement("button");
+  btnread.classList.add("btn", "btn-primary", "col-3", "mx-auto");
+  btnread.innerHTML = "Finished Reading"
+  var btndelete = document.createElement("button");
+  btndelete.classList.add("btn", "btn-danger", "col-3", "mx-auto");
+  btndelete.innerHTML = "Delete Book"
+  temp.appendChild(btnread);
+  temp.appendChild(btndelete);
   bookcontainer.appendChild(book);
 }
 
