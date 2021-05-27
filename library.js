@@ -1,11 +1,12 @@
 libarray=[];
+// Object creator
 function Book(title,author,pages,read){
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.read = read;
 }
-
+// Main function that processes the provided data and prints it on a card
 function printBook(data) {
   var arr = Object.keys(data);
   var bookcontainer = document.querySelector("#BookContainer");
@@ -31,6 +32,7 @@ function printBook(data) {
   var btnread = document.createElement("button");
   btnread.classList.add("btn", "btn-primary", "col-3", "mx-auto");
   btnread.innerHTML = "Finished Reading"
+  // if(data.last.value === false) if read state is false print the "finished reading" button
   var btndelete = document.createElement("button");
   btndelete.classList.add("btn", "btn-danger", "col-3", "mx-auto");
   btndelete.innerHTML = "Delete Book"
@@ -38,7 +40,7 @@ function printBook(data) {
   temp.appendChild(btndelete);
   bookcontainer.appendChild(book);
 }
-
+// Gets the data from the input form to feed into the "PrintBook" function.
 function GetBook(){
   var title = document.getElementById("BookTitle").value;
   var author = document.getElementById("BookAuthor").value;
@@ -49,7 +51,7 @@ function GetBook(){
   libarray.push(first);
   printBook(first);
 }
-
+// Button listeners to trigger certain events
 const btn = document.querySelector('#Btn');
 btn.addEventListener('click', () => {
   GetBook();
