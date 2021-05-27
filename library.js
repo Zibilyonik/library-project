@@ -46,7 +46,7 @@ function GetBook(){
   printBook(first);
 }
 
-const btn = document.querySelector('#btn');
+const btn = document.querySelector('#Btn');
 btn.addEventListener('click', () => {
   GetBook();
 });

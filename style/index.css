@@ -37,7 +37,8 @@ body {
 }
 
 .bookcontainer {
-  border: 10px dotted black;
-  background: silver;
+  border: 3px outset #DBA080;
+  background: -webkit-gradient(linear, left top, right top, from(#BF6636), to(#DBA080));
+  background: linear-gradient(90deg, #BF6636 0%, #DBA080 100%);
 }
 /*# sourceMappingURL=index.css.map */
