@@ -27,7 +27,6 @@ function printBook(data) {
     temp.appendChild(temp2);
     temp.appendChild(temp2c);
     book.appendChild(temp);
-   
   }
   var btnread = document.createElement("button");
   btnread.classList.add("btn", "btn-primary", "col-3", "mx-auto");
@@ -41,7 +40,6 @@ function printBook(data) {
 }
 
 function GetBook(){
-  
   var title = document.getElementById("BookTitle").value;
   var author = document.getElementById("BookAuthor").value;
   var pages = document.getElementById("BookPages").value;
