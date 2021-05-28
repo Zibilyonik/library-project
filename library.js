@@ -11,10 +11,11 @@ function printBook(data) {
   var arr = Object.keys(data);
   var bookcontainer = document.querySelector("#BookContainer");
   var book = document.createElement("div");
-  book.classList.add("col-12","my-5", "row", "bookcontainer", "text-center");
+  book.id = libarray.length;
+  book.classList.add("col-12","my-2", "row", "bookcontainer", "text-center");
   for(var i = 0; i < 4; i++){
     var temp = document.createElement("div");
-    temp.classList.add("titlegroup", "row");
+    temp.classList.add("titlegroup", "row", arr[i]);
     var temp2 = document.createElement("div");
     temp2.classList.add("col-sm-12", "col-lg-6");
     var temp2c = temp2.cloneNode(true);
@@ -29,15 +30,23 @@ function printBook(data) {
     temp.appendChild(temp2c);
     book.appendChild(temp);
   }
+  var btncontainer = document.createElement("div");
+  btncontainer.classList.add("btngroup", "row")
   var btnread = document.createElement("button");
-  btnread.classList.add("btn", "btn-primary", "col-3", "mx-auto");
-  btnread.innerHTML = "Finished Reading"
-  // if(data.last.value === false) if read state is false print the "finished reading" button
+  if( data.read === false){
+    btnread.classList.add("btn", "btn-primary", "col-3", "mx-auto", "btnread");
+    btnread.innerHTML = "Finished Reading";
+  } else {
+    btnread.classList.add("btn", "btn-primary", "col-3", "mx-auto", "btnread");
+    btnread.disabled = true;
+    btnread.innerHTML = "Already Finished";
+  }
   var btndelete = document.createElement("button");
-  btndelete.classList.add("btn", "btn-danger", "col-3", "mx-auto");
-  btndelete.innerHTML = "Delete Book"
-  temp.appendChild(btnread);
-  temp.appendChild(btndelete);
+  btndelete.classList.add("btn", "btn-danger", "col-3", "mx-auto", "btndelete");
+  btndelete.innerHTML = "Delete Book";
+  btncontainer.appendChild(btnread);
+  btncontainer.appendChild(btndelete);
+  book.appendChild(btncontainer);
   bookcontainer.appendChild(book);
 }
 // Gets the data from the input form to feed into the "PrintBook" function.
@@ -47,12 +56,21 @@ function GetBook(){
   var pages = document.getElementById("BookPages").value;
   var read = document.getElementById("BookRead").checked;
   var first = new Book(title, author, pages, read);
-  console.log(first.title)
   libarray.push(first);
   printBook(first);
 }
 // Button listeners to trigger certain events
-const btn = document.querySelector('#Btn');
-btn.addEventListener('click', () => {
+const btnsubmit = document.querySelector('#Btn');
+btnsubmit.addEventListener('click', () => {
   GetBook();
+});
+const btnread = document.querySelector('.btnread');
+btnread.addEventListener('click', () => {
+  var container = btnread.parentElement;
+  container.remove();
+});
+const btndelete = document.querySelector('.btndelete');
+btndelete.addEventListener('click', () => {
+  var container = btndelete.parentElement;
+  container.remove();
 });
