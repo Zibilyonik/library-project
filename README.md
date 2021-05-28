@@ -11,17 +11,18 @@ A project to keep track of books a user has read, using JS and basic HTML/ CSS
 
 - HTML
 - CSS
-- JAVASCRIPT
+- JavaScript
 - SASS
-- BOOTSTRAP
+- Bootstrap
 
 ## Contributors
 
 👤 **Onur Onat Surmeli**
 
-* [LinkedIn](https://www.linkedin.com/in/onur-onat-surmeli-1143ab181/)
 
-* [Github](https://github.com/Zibilyonik)
+- GitHub: [@githubhandle](https://github.com/Zibilyonik)
+- Twitter: [@twitterhandle](https://twitter.com/OnurSurmeli2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/onuronatsurmeli/)
 
 👤 **TSHEPO DAVID MOLEFE**
 
