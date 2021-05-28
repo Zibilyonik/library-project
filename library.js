@@ -75,7 +75,6 @@ const btnsubmit = document.querySelector('#Btn');
 btnsubmit.addEventListener('click', () => {
   GetBook();
 });
-=======
 let myLibrary = [];
 let newBook
 let tempLibrary
