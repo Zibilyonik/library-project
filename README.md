@@ -26,9 +26,9 @@ A project to keep track of books a user has read, using JS and basic HTML/ CSS
 
 👤 **TSHEPO DAVID MOLEFE**
 
-- GitHub: [@githubhandle](https://github.com/TSHEPO-CLOUD)
-- Twitter: [@twitterhandle](https://twitter.com/tshepomolefem)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tshepo-molefe-8153313b)
+- [GitHub](https://github.com/TSHEPO-CLOUD)
+- [Twitter](https://twitter.com/tshepomolefem)
+- [LinkedIn](https://www.linkedin.com/in/tshepo-molefe-8153313b)
 
 ## 🤝 Contributing
 
