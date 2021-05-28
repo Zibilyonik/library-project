@@ -22,7 +22,7 @@ function printBook(data) {
     var temp3 = document.createElement("h3");
     temp3.classList.add("label", "h3");
     var temp3c = temp3.cloneNode(true);
-    temp3.innerHTML = arr[i] + " of the book:"
+    temp3.innerHTML = arr[i].replace(/^\w/, (c) => c.toUpperCase()) + ":"
     temp3c.innerHTML = data[arr[i]]
     temp2.appendChild(temp3);
     temp2c.appendChild(temp3c);
@@ -46,6 +46,17 @@ function printBook(data) {
   btndelete.innerHTML = "Delete Book";
   btncontainer.appendChild(btnread);
   btncontainer.appendChild(btndelete);
+  btnread.addEventListener('click', () => {
+    var readline = book.querySelector(".read");
+    readline.childNodes[1].childNodes[0].innerHTML = "True"
+    libarray[book.id-1].read = true;
+    btnread.disabled = true;
+  });
+  btndelete.addEventListener('click', () => {
+    var container = btndelete.parentElement.parentElement;
+    container.remove();
+    libarray.splice(book.id-1, 1);
+  });
   book.appendChild(btncontainer);
   bookcontainer.appendChild(book);
 }
@@ -63,14 +74,4 @@ function GetBook(){
 const btnsubmit = document.querySelector('#Btn');
 btnsubmit.addEventListener('click', () => {
   GetBook();
-});
-const btnread = document.querySelector('.btnread');
-btnread.addEventListener('click', () => {
-  var container = btnread.parentElement;
-  container.remove();
-});
-const btndelete = document.querySelector('.btndelete');
-btndelete.addEventListener('click', () => {
-  var container = btndelete.parentElement;
-  container.remove();
 });
