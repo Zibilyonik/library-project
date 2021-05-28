@@ -22,7 +22,7 @@ body {
 
 .form-control {
   -webkit-box-shadow: 3px 3px 3px #645f5f;
-          box-shadow: 3px 3px 3px #645f5f;
+  box-shadow: 3px 3px 3px #645f5f;
 }
 
 .main-title {
