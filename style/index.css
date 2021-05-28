@@ -1,7 +1,7 @@
 body {
   min-height: 98vh;
-  background: #ADADAD;
-  background: linear-gradient(130deg, #ADADAD 0%, #daedf1 100%);
+  background: #adadad;
+  background: linear-gradient(130deg, #adadad 0%, #daedf1 100%);
 }
 
 .bg-circle {
@@ -38,9 +38,9 @@ body {
 
 .bookcontainer {
   padding: 10px 0 10px 0;
-  border: 3px outset #DBA080;
-  background: -webkit-gradient(linear, left top, right top, from(#BF6636), to(#DBA080));
-  background: linear-gradient(90deg, #BF6636 0%, #DBA080 100%);
+  border: 3px outset #dba080;
+  background: -webkit-gradient(linear, left top, right top, from(#bf6636), to(#dba080));
+  background: linear-gradient(90deg, #bf6636 0%, #dba080 100%);
   border-radius: 10px;
 }
 /*# sourceMappingURL=index.css.map */
