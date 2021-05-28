@@ -28,7 +28,7 @@ The contrast between the colours of foreground and background makes the book car
 - BOOTSTRAP
 
 
-**Getting Started**
+## Getting Started
 
 1. Open Terminal.
 2. Navigate to your desired location to download the contents of this repository.
