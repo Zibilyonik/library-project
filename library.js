@@ -13,7 +13,7 @@ function printBook(data) {
   const book = document.createElement('div');
   book.id = libarray.length;
   book.classList.add('col-12', 'my-2', 'row', 'bookcontainer', 'text-center');
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 4; i += 1) {
     const temp = document.createElement('div');
     temp.classList.add('titlegroup', 'row', arr[i]);
     const temp2 = document.createElement('div');
