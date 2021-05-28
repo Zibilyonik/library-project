@@ -1,6 +1,15 @@
 # library-project
-A project to keep track of books a user has read, using JS and basic HTML/ CSS
 
+
+## Project Decription
+A lightweight JavaScript project that allows users to interact with a fully client-based interface.
+Users can add books that they've read or are planning to read to the page to easily keep track of them.
+The added books can be modified by buttons provided to the users. A user can change the status of the book from unfinished to finished, or remove a book as they desire.
+
+
+## Project Design
+The books are displayed on cards to separate them, allowing for a tidier experience for the users.
+The contrast between the colours of foreground and background makes the book cards more visible and more accessible.
 
 
 ## Screenshot of the page
