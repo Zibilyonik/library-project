@@ -30,6 +30,14 @@ The contrast between the colours of foreground and background makes the book car
 - SASS
 - Bootstrap
 
+**To get this project set up on your local machine, follow these simple steps:**
+
+1. Open Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Copy and paste the following code into the Terminal: git clone https://github.com/Zibilyonik/library-project/tree/books
+4. ```cd library-project```.
+
+
 ## Contributors
 
 👤 **Onur Onat Surmeli**

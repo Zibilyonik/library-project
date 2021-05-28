@@ -1,12 +1,12 @@
 const libarray = [];
-// Object creator
+
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.read = read;
 }
-// Main function that processes the provided data and prints it on a card
+
 function printBook(data) {
   const arr = Object.keys(data);
   const bookcontainer = document.querySelector('#BookContainer');
@@ -60,7 +60,7 @@ function printBook(data) {
   book.appendChild(btncontainer);
   bookcontainer.appendChild(book);
 }
-// Gets the data from the input form to feed into the "PrintBook" function.
+
 function GetBook() {
   const title = document.getElementById('BookTitle').value;
   const author = document.getElementById('BookAuthor').value;
@@ -70,7 +70,7 @@ function GetBook() {
   libarray.push(first);
   printBook(first);
 }
-// Button listeners to trigger certain events
+
 const btnsubmit = document.querySelector('#Btn');
 btnsubmit.addEventListener('click', () => {
   GetBook();
