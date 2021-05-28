@@ -20,9 +20,9 @@ A project to keep track of books a user has read, using JS and basic HTML/ CSS
 👤 **Onur Onat Surmeli**
 
 
-- GitHub: [@githubhandle](https://github.com/Zibilyonik)
-- Twitter: [@twitterhandle](https://twitter.com/OnurSurmeli2)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/onuronatsurmeli/)
+- [GitHub](https://github.com/Zibilyonik)
+- [Twitter](https://twitter.com/OnurSurmeli2)
+- [LinkedIn](https://www.linkedin.com/in/onuronatsurmeli/)
 
 👤 **TSHEPO DAVID MOLEFE**
 
