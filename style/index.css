@@ -1,0 +1,46 @@
+body {
+  min-height: 98vh;
+  background: #adadad;
+  background: linear-gradient(130deg, #adadad 0%, #daedf1 100%);
+}
+
+.bg-circle {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: #698797;
+  display: inline-block;
+  z-index: -100;
+  position: fixed;
+  top: -400px;
+  left: -400px;
+}
+
+.pagemain {
+  width: 50%;
+}
+
+.form-control {
+  -webkit-box-shadow: 3px 3px 3px #645f5f;
+  box-shadow: 3px 3px 3px #645f5f;
+}
+
+.main-title {
+  color: #e4e4e4;
+  position: fixed;
+  top: 100px;
+  z-index: -20;
+}
+
+.form-container {
+  max-width: 800px;
+}
+
+.bookcontainer {
+  padding: 10px 0 10px 0;
+  border: 3px outset #dba080;
+  background: -webkit-gradient(linear, left top, right top, from(#bf6636), to(#dba080));
+  background: linear-gradient(90deg, #bf6636 0%, #dba080 100%);
+  border-radius: 10px;
+}
+/*# sourceMappingURL=index.css.map */
