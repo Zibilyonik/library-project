@@ -1,7 +1,9 @@
 const libarray = [];
 
 const Book = (title, author, pages, read) => {
-  return {title, author, pages, read};
+
+  return { title, author, pages, read };
+  
 };
 
 function printBook(data) {
@@ -63,7 +65,7 @@ function GetBook() {
   const author = document.getElementById('BookAuthor').value;
   const pages = document.getElementById('BookPages').value;
   const read = document.getElementById('BookRead').checked;
-  const first = Book(title, author, pages, read);
+  const first = Book (title, author, pages, read);
   libarray.push(first);
   printBook(first);
 }
