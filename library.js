@@ -1,17 +1,8 @@
 const libarray = [];
 
-// function Book(title, author, pages, read) {
-//   this.title = title;
-//   this.author = author;
-//   this.pages = pages;
-//   this.read = read;
-// }
-
 const Book = (title, author, pages, read) => {
   return {title, author, pages, read};
 };
-
-
 
 function printBook(data) {
   const arr = Object.keys(data);
