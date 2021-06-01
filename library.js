@@ -1,11 +1,8 @@
 const libarray = [];
 
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-}
+const Book = (title, author, pages, read) => ({
+  title, author, pages, read,
+});
 
 function printBook(data) {
   const arr = Object.keys(data);
@@ -66,7 +63,7 @@ function GetBook() {
   const author = document.getElementById('BookAuthor').value;
   const pages = document.getElementById('BookPages').value;
   const read = document.getElementById('BookRead').checked;
-  const first = new Book(title, author, pages, read);
+  const first = Book(title, author, pages, read);
   libarray.push(first);
   printBook(first);
 }
