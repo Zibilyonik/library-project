@@ -40,16 +40,6 @@ The contrast between the colours of foreground and background makes the book car
 
 👤 **Onur Onat Surmeli**
 
-* [LinkedIn](https://www.linkedin.com/in/onur-onat-surmeli-1143ab181/)
-
-* [Github](https://github.com/Zibilyonik)
-
-👤 **TSHEPO DAVID MOLEFE**
-
-- GitHub: [@githubhandle](https://github.com/TSHEPO-CLOUD)
-- Twitter: [@twitterhandle](https://twitter.com/tshepomolefem)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tshepo-molefe-8153313b)
-
 - [GitHub](https://github.com/Zibilyonik)
 - [Twitter](https://twitter.com/OnurSurmeli2)
 - [LinkedIn](https://www.linkedin.com/in/onuronatsurmeli/)
