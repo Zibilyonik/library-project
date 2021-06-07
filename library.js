@@ -1,7 +1,12 @@
 const libarray = [];
 
-const BookFactory = (title, author, pages, read) => {
-  return { title, author, pages, read };
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
 }
 
 function printBook(data) {
@@ -63,7 +68,7 @@ function GetBook() {
   const author = document.getElementById('BookAuthor').value;
   const pages = document.getElementById('BookPages').value;
   const read = document.getElementById('BookRead').checked;
-  const first = BookFactory(title, author, pages, read);
+  const first = new Book(title, author, pages, read);
   libarray.push(first);
   printBook(first);
 }
